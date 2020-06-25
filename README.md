@@ -21,5 +21,5 @@ $ npm run dev
 ## Halaman Update
 ![update](https://user-images.githubusercontent.com/63647276/85724883-7a8cd680-b6a9-11ea-946b-f2b4a9ea7931.png)
 
-##Halaman Delete
+## Halaman Delete
 ![delete](https://user-images.githubusercontent.com/63647276/85725049-9c865900-b6a9-11ea-9e43-f796e4632b5e.png)
