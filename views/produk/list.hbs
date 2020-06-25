@@ -1,0 +1,28 @@
+<h3><a href="/produk" class="btn btn-secondary"><i class="fa fa-plus">Create New</i></a>Produk List</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nama Produk</th>
+            <th>Keterangan</th>
+            <th>Harga(Rp)</th>
+            <th>Jumlah</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+            <tr>
+                <td>{{this.nama_produk}}</td>
+                <td>{{this.keterangan}}</td>
+                <td>{{this.harga}}</td>
+                <td>{{this.jumlah}}</td>
+                <td>
+                    <a href="/produk/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                    <a href="/produk/delete/{{this._id}}"
+                        onclick="return confirm('Are you sure to delete this record?')"><i class="fa fa-trash fa-lg"
+                            aria-hidden="true"></i></a>
+                </td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>
